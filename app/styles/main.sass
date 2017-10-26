@@ -1,10 +1,18 @@
-// Box-sizing reset
+
+$primary-bg: #2454C1
+$secondary-bg: #649E9B
+$default-bg: #D7E5E4
+
+$primary-color: #2454C1
+$secondary-color: #649E9B
+$default-color: #D7E5E4
 
 html
   box-sizing: border-box
-  font-family: 'Lato', sans-serif
+  font-family: 'Work Sans', sans-serif
   color : #5D6771
   font-weight: 100
+
 
 *, *:before, *:after
   box-sizing: inherit
@@ -13,3 +21,39 @@ h1
   font-weight: 300
 body
   background: #fff
+
+
+.palette
+  display: grid
+  grid-template-columns: repeat(5,1fr)
+  grid-auto-rows: minmax(100px,auto)
+  grid-gap: 3em
+
+.palette-item
+  text-align: center
+  padding-top : 35px !important
+
+.box 
+  border-radius: 5px
+  box-shadow: 0 10px 24px 0px rgba(0, 0, 0, 0.02), 0 8px 20px -2px rgba(0, 0, 0, 0.06), 0 6px 10px -6px rgba(0, 0, 0, 0.1)
+  padding: 5px
+
+
+.primary-bg
+  background-color: $primary-bg
+  color: #fff
+.secondary-bg
+  background-color: $secondary-bg
+  color: #fff
+.default-bg
+  background-color: $default-bg
+  color: #5D6771
+
+
+
+.primary-color
+
+.secondary-color
+
+.default-color
+
