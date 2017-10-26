@@ -1,9 +1,61 @@
 extends /layouts/_default
 
 block content
-  h1.box Color palette : 
-  .palette
-    .box.palette-item.primary-bg #2454C1
-    .box.palette-item.secondary-bg #649E9B
-    .box.palette-item.default-bg #F1F1E6
-  
+ .container.round-borders
+   h1.text-center.lobster My UI library
+   hr
+   h2 Color palette : 
+   hr
+   .palette
+     .box.primary-bottom-bordred.palette-item.primary-bg.round-borders #2454C1
+     .box.secondary-bottom-bordred.palette-item.secondary-bg.round-borders #649E9B
+     .box.default-bottom-bordred.palette-item.default-bg.round-borders #F1F1E6
+     .box.primary-bottom-bordred.palette-item.primary-gradient-bg.round-borders gradient
+     .box.secondary-bottom-bordred.palette-item.secondary-gradient-bg.round-borders gradient
+     .box.default-bottom-bordred.palette-item.default-gradient-bg.round-borders gradient
+     .box.default-bordred.default-bottom-bordred.round-borders 
+      .center-block test 
+   hr
+   h2 form elements :
+   hr
+   label.primary-color label
+   input(type="text", placeholder="placeholder").form-input
+   label.error-color label error
+   input(type="text", placeholder="placeholder error").form-input.error-input
+   label.success-color success
+   input(type="text", placeholder="placeholder error").form-input.success-input
+   label.primary-color textarea
+     textarea
+   label.primary-color select
+     select
+       option select 
+   hr
+   h2 buttons : 
+   hr
+   h3 normale :
+   button.box.primary-bg.round-borders primary button
+   button.box.secondary-bg.round-borders secondary button
+   button.box.default-bg.round-borders default button
+   h3 bordred : 
+   button.box.primary-bg.round-borders.primary-dark-bottom-bordred primary button
+   button.box.secondary-bg.round-borders.secondary-dark-bottom-bordred secondary button
+   button.box.default-bg.round-borders.default-dark-bottom-bordred default button
+   h3 gradient : 
+   button.box.primary-gradient-bg.round-borders primary gradient button
+   button.box.secondary-gradient-bg.round-borders secondary gradient button
+   button.box.default-gradient-bg.round-borders default gradient button
+   h3 with icons :
+   button.box.primary-bg.round-borders primary button
+     i.fa.fa-check
+   button.box.secondary-bg.round-borders secondary button
+     i.fa.fa-bookmark-o
+   button.box.default-bg.round-borders default button
+     i.fa.fa-cog
+   h3 only-icons buttons: 
+   button.box.primary-bg.icon-btn
+     i.fa.fa-cog
+   button.box.secondary-bg.icon-btn
+     i.fa.fa-cog
+   button.box.default-bg.icon-btn
+     i.fa.fa-cog
+      
