@@ -205,14 +205,25 @@ button
     width: 100%
     padding: 0
     text-align: center
+
 button:hover
   filter: brightness(110%)
   -webkit-filter: brightness(110%)
+
 button.disable
   filter: grayscale(70%)  saturate(0.25) !important
   -webkit-filter:  grayscale(70%)  saturate(0.25) !important
+
 .text-center
   text-align: center
+
+.pull-right
+  float:right
+
+.clearfix:after
+  content: ''
+  clear: both
+  display: block
 
 .primary-empty 
   border: 1px solid $primary-color
@@ -303,3 +314,40 @@ button.disable
     -webkit-transform: rotate(45deg)
     -ms-transform: rotate(45deg)
     transform: rotate(45deg)
+//modal
+.modal
+  box-shadow: 0 0 15px 1px rgba(133,140,142,0.3)
+  margin-top: 20px
+  margin-bottom: 20px
+  .header
+    background-color: $default-color
+    color: #fff
+    border-radius: 5px
+    border-bottom-left-radius: 0
+    border-bottom-right-radius: 0
+    padding: 10px
+    text-align: center
+  .content
+    padding: 28px
+    text-align: justify
+  .footer
+    padding: 28px
+
+.modal.primary
+  .header
+    background-color: $primary-color
+.modal.secondary
+  .header
+    background-color: $secondary-color
+
+.modal.primary-gradient
+  .header
+    background-image: $primary-gradient-bg
+.modal.secondary-gradient
+  .header
+    background-image: $secondary-gradient-bg
+
+.modal.default-gradient
+  .header
+    background-image: $default-gradient-bg
+    color: darken($default-color , 40%)
