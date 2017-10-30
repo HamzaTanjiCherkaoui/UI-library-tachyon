@@ -19,7 +19,7 @@ $success-color : #24C179
 $warning-color : #C1B424
 
 .roboto 
-  // font-family: 'Ubuntu Mono', monospace;
+  // font-family: 'Ubuntu Mono', monospace
   font-family: 'Palanquin Dark', sans-serif
 html
   box-sizing: border-box
@@ -36,8 +36,18 @@ hr
   padding: 10px
 h1 
   font-weight: 800
+h1,h2,h3,h4
+  text-transform: capitalize
 body
   background: #f1f4f5
+.tree-columns
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+.two-columns
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-gap: 1em
+
 *:focus 
   outline: none
 
@@ -167,7 +177,7 @@ label
     border-bottom-left-radius: 5px
     border-top-left-radius: 5px
     font-size: 10px
-    border-right: 2px solid #cccece
+    border-right: 2px solid darken($dim-bg,5%)
     height: 37px
     display: grid
     grid-template-rows: 1fr
@@ -193,8 +203,100 @@ button
     padding: 0
     text-align: center
 button:hover
-  filter: brightness(110%);
-  -webkit-filter: brightness(110%);
+  filter: brightness(110%)
+  -webkit-filter: brightness(110%)
+button.disable
+  filter: grayscale(70%)  saturate(0.25) !important
+  -webkit-filter:  grayscale(70%)  saturate(0.25) !important
 .text-center
   text-align: center
 
+.primary-empty 
+  border: 1px solid $primary-color
+  color:  $primary-color
+  background-color: #fff
+.secondary-empty 
+  border: 1px solid $secondary-color
+  color:  $secondary-color
+  background-color: #fff
+.default-empty 
+  border: 1px solid $default-color
+  color:  darken($default-color,30%)
+  background-color: #fff
+
+//checkboxes
+
+.checkbox 
+  display: block
+  position: relative
+  width: 30px
+  height: 30px
+  cursor: pointer
+  font-size: 22px
+  padding-left: 35px
+  font-weight: 100
+  margin: 15px
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  input 
+    position: absolute
+    opacity: 0
+
+
+.checkbox.rounded
+  span
+   border-radius: 50px
+.checkbox.semi-rounded
+  span
+   border-radius: 5px
+
+.checkmark 
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  height: 30px
+  width: 30px
+  margin: auto
+  background-color: $dim-bg
+
+
+
+.checkbox 
+  &:hover input ~ .checkmark 
+    background-color: darken($dim-bg,10%)
+
+.checkbox.primary
+  input:checked ~ .checkmark 
+    background-color: $primary-color
+.checkbox.secondary
+  input:checked ~ .checkmark 
+    background-color: $secondary-color
+.checkbox.default
+  input:checked ~ .checkmark 
+    background-color: $default-color
+
+.checkmark:after 
+  content: ""
+  position: absolute
+  display: none
+
+
+
+
+.checkbox 
+  input:checked ~ .checkmark:after 
+    display: block
+  
+  .checkmark:after 
+    left: 9px
+    top: 5px
+    width: 10px
+    height: 15px
+    border: solid white
+    border-width: 0 3px 3px 0
+    -webkit-transform: rotate(45deg)
+    -ms-transform: rotate(45deg)
+    transform: rotate(45deg)

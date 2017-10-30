@@ -34,22 +34,43 @@ block content
    hr
    h2 buttons : 
    hr
-   h3 normale :
-   button.box.primary-bg.round-borders primary button
-   button.box.secondary-bg.round-borders secondary button
-   button.box.default-bg.round-borders default button
-   h3 bordred : 
-   button.box.primary-bg.round-borders.primary-dark-bottom-bordred primary button
-   button.box.secondary-bg.round-borders.secondary-dark-bottom-bordred secondary button
-   button.box.default-bg.round-borders.default-dark-bottom-bordred default button
-   h3 gradient : 
-   button.box.primary-gradient-bg.round-borders primary gradient button
-   button.box.secondary-gradient-bg.round-borders secondary gradient button
-   button.box.default-gradient-bg.round-borders default gradient button
-   h3 empty : 
-   button.box.primary-gradient-bg.round-borders primary gradient button
-   button.box.secondary-gradient-bg.round-borders secondary gradient button
-   button.box.default-gradient-bg.round-borders default gradient button
+   .two-columns
+     div
+      h3 normale :
+      button.box.primary-bg.round-borders primary button
+      button.box.secondary-bg.round-borders secondary button
+      button.box.default-bg.round-borders default button
+     div
+      h3 normale disabled : 
+      button.box.primary-bg.round-borders.disable primary button
+      button.box.secondary-bg.round-borders.disable secondary button
+      button.box.default-bg.round-borders.disable default button
+     div
+      h3 bordred : 
+      button.box.primary-bg.round-borders.primary-dark-bottom-bordred primary button
+      button.box.secondary-bg.round-borders.secondary-dark-bottom-bordred secondary button
+      button.box.default-bg.round-borders.default-dark-bottom-bordred default button
+     div
+      h3 bordred disabled : 
+      button.box.primary-bg.round-borders.primary-dark-bottom-bordred.disable primary button
+      button.box.secondary-bg.round-borders.secondary-dark-bottom-bordred.disable secondary button
+      button.box.default-bg.round-borders.default-dark-bottom-bordred.disable default button
+     div
+      h3 gradient : 
+      button.box.primary-gradient-bg.round-borders primary gradient button
+      button.box.secondary-gradient-bg.round-borders secondary gradient button
+      button.box.default-gradient-bg.round-borders default gradient button
+     div
+      h3 gradient disabled  : 
+      button.box.primary-gradient-bg.round-borders.disable primary gradient button
+      button.box.secondary-gradient-bg.round-borders.disable secondary gradient button
+      button.box.default-gradient-bg.round-borders.disable default gradient button
+     
+     div
+      h3 empty : 
+      button.box.primary-empty.round-borders primary empty button
+      button.box.secondary-empty.round-borders secondary empty button
+      button.box.default-empty.round-borders default empty button
    
    h3 with icons :
    button.box.primary-bg.round-borders primary button
@@ -92,6 +113,46 @@ block content
        input(type="text", placeholder="placeholder").form-input
 
    h3 checkboxes
+    hr
+    .tree-columns
+      .col
+        h4 Normal
+        hr
+        label.checkbox.primary  lorem
+         input(type="checkbox", checked="")
+         span.checkmark
+        label.checkbox.secondary lorem
+         input(type="checkbox")
+         span.checkmark
+        label.checkbox.default lorem
+         input(type="checkbox")
+         span.checkmark    
+      .col
+        h4 Semi-rounded
+        hr
+        label.checkbox.primary.semi-rounded lorem
+         input(type="checkbox")
+         span.checkmark
+        label.checkbox.secondary.semi-rounded lorem
+         input(type="checkbox", checked="")
+         span.checkmark
+        label.checkbox.default.semi-rounded lorem
+         input(type="checkbox")
+         span.checkmark
+    
+      .col
+        h4 rounded
+        hr
+        label.checkbox.primary.rounded lorem
+         input(type="checkbox")
+         span.checkmark
+        label.checkbox.secondary.rounded lorem
+         input(type="checkbox")
+         span.checkmark
+        label.checkbox.default.rounded lorem
+         input(type="checkbox", checked="")
+         span.checkmark
+   hr
    h3 radio buttons
    h3 wizzard
    hr
