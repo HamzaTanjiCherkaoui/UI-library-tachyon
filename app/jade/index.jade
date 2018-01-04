@@ -2,6 +2,28 @@ extends /layouts/_default
 
 block content
  body
+  header.sans-serif
+  .cover.bg-left.bg-center-l(style='background-image: url(http://mrmrs.github.io/photos/u/011.jpg)')
+    .bg-black-80.pb5.pb6-m.pb7-l
+      nav.dt.w-100.mw8.center
+        .dtc.w2.v-mid.pa3
+          a.dib.w2.h2.pa1.ba.b--white-90.grow-large.border-box(href='/')
+            svg.link.white-90.hover-white(data-icon='skull', viewbox='0 0 32 32', style='fill:currentcolor')
+              title skull icon
+              path(d='M16 0 C6 0 2 4 2 14 L2 22 L6 24 L6 30 L26 30 L26 24 L30 22 L30 14 C30 4 26 0 16 0 M9 12 A4.5 4.5 0 0 1 9 21 A4.5 4.5 0 0 1 9 12 M23 12 A4.5 4.5 0 0 1 23 21 A4.5 4.5 0 0 1 23 12')
+        .dtc.v-mid.tr.pa3
+          a.f6.fw4.hover-white.no-underline.white-70.dn.dib-ns.pv2.ph3(href='/') How it Works
+          a.f6.fw4.hover-white.no-underline.white-70.dn.dib-ns.pv2.ph3(href='/') Pricing
+          a.f6.fw4.hover-white.no-underline.white-70.dn.dib-l.pv2.ph3(href='/') About
+          a.f6.fw4.hover-white.no-underline.white-70.dn.dib-l.pv2.ph3(href='/') Careers
+          a.f6.fw4.hover-white.no-underline.white-70.dib.ml2.pv2.ph3.ba(href='/') Sign Up
+      .tc-l.mt4.mt5-m.mt6-l.ph3
+        h1.f2.f1-l.fw2.white-90.mb0.lh-title This is your super impressive headline
+        h2.fw1.f3.white-80.mt3.mb4 Now a subheadline where explain your wonderful new startup even more
+        a.f6.no-underline.grow.dib.v-mid.primary-bg.white.ph3.pv2.mb3(href='/') Call to Action
+        span.dib.v-mid.ph3.white-70.mb3 or
+        a.f6.no-underline.grow.dib.v-mid.white.ba.b--white.ph3.pv2.mb3(href='') Secondary call to action
+
   article
   .vh-100.dt.w-100.tc.bg-dark-gray.white.cover(style='background:url(http://mrmrs.github.io/photos/u/009.jpg) no-repeat center;')
     .dtc.v-mid
@@ -182,9 +204,7 @@ block content
             header.tc.pv4.pv5-ns
               img.br-100.pa1.ba.b--black-10.h3.w3(src='http://tachyons.io/img/logo.jpg', alt='avatar')
               h1.f5.f4-ns.fw6.mid-gray Jasper Whitehouse
-              h2.f6.gray.fw2.ttu.tracked Los Angeles
-          hr
-
+              h2.f6.gray.fw2.ttu.tracked Los Angeles  
 
   .wrapper
    .container.round-borders.gap
