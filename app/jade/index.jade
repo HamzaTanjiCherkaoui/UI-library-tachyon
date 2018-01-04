@@ -1,246 +1,234 @@
 extends /layouts/_default
 
 block content
- .container.round-borders
-   h1.text-center.roboto My UI library
-   hr
-   h2 Color palette : 
-   hr
-   .palette
-     .box.primary-bottom-bordred.palette-item.primary-bg.round-borders #2454C1
-     .box.secondary-bottom-bordred.palette-item.secondary-bg.round-borders #649E9B
-     .box.default-bottom-bordred.palette-item.default-bg.round-borders #F1F1E6
-     .box.primary-bottom-bordred.palette-item.primary-gradient-bg.round-borders gradient
-     .box.secondary-bottom-bordred.palette-item.secondary-gradient-bg.round-borders gradient
-     .box.default-bottom-bordred.palette-item.default-gradient-bg.round-borders gradient
-     .box.default-bordred.default-bottom-bordred.round-borders 
-      .center-block test 
-   hr
-   h2 form elements :
-   hr
-   label.primary-color label
-   input(type="text", placeholder="placeholder").form-input
-   label.error-color label error
-   input(type="text", placeholder="placeholder error").form-input.error-input
-   label.success-color success
-   input(type="text", placeholder="placeholder error").form-input.success-input
-   label.primary-color textarea
-     textarea
-   label.primary-color select
-     select
-       option option1
-       option option2
-       option option3 
-   hr
-   h2 buttons : 
-   hr
-   .two-columns
-     div
-      h3 normale :
-      button.box.primary-bg.round-borders primary button
-      button.box.secondary-bg.round-borders secondary button
-      button.box.default-bg.round-borders default button
-     div
-      h3 normale disabled : 
-      button.box.primary-bg.round-borders.disable primary button
-      button.box.secondary-bg.round-borders.disable secondary button
-      button.box.default-bg.round-borders.disable default button
-     div
-      h3 bordred : 
-      button.box.primary-bg.round-borders.primary-dark-bottom-bordred primary button
-      button.box.secondary-bg.round-borders.secondary-dark-bottom-bordred secondary button
-      button.box.default-bg.round-borders.default-dark-bottom-bordred default button
-     div
-      h3 bordred disabled : 
-      button.box.primary-bg.round-borders.primary-dark-bottom-bordred.disable primary button
-      button.box.secondary-bg.round-borders.secondary-dark-bottom-bordred.disable secondary button
-      button.box.default-bg.round-borders.default-dark-bottom-bordred.disable default button
-     div
-      h3 gradient : 
-      button.box.primary-gradient-bg.round-borders primary gradient button
-      button.box.secondary-gradient-bg.round-borders secondary gradient button
-      button.box.default-gradient-bg.round-borders default gradient button
-     div
-      h3 gradient disabled  : 
-      button.box.primary-gradient-bg.round-borders.disable primary gradient button
-      button.box.secondary-gradient-bg.round-borders.disable secondary gradient button
-      button.box.default-gradient-bg.round-borders.disable default gradient button
-     
-     div
-      h3 empty : 
-      button.box.primary-empty.round-borders primary empty button
-      button.box.secondary-empty.round-borders secondary empty button
-      button.box.default-empty.round-borders default empty button
-     div
-      h3 empty disabled : 
-      button.box.primary-empty.round-borders.disable primary empty button
-      button.box.secondary-empty.round-borders.disable secondary empty button
-      button.box.default-empty.round-borders.disable default empty button
-   
-   h3 with icons :
-   button.box.primary-bg.round-borders primary button
-     i.fa.fa-check
-   button.box.secondary-bg.round-borders secondary button
-     i.fa.fa-bookmark-o
-   button.box.default-bg.round-borders default button
-     i.fa.fa-cog
-   h3 only-icons buttons: 
-   button.box.primary-bg.icon-btn
-     i.fa.fa-cog
-   button.box.secondary-bg.icon-btn
-     i.fa.fa-cog
-   button.box.default-bg.icon-btn
-     i.fa.fa-cog
-   h3 inputs with icons
-     .input-group
-       .primary-bg.input-icon
-        i.fa.fa-check
-       input(type="text", placeholder="placeholder").form-input
-     .input-group
-       .secondary-bg.input-icon
-        i.fa.fa-cog
-       input(type="text", placeholder="placeholder").form-input
-     .input-group
-       .default-bg.input-icon
-        i.fa.fa-at
-       input(type="text", placeholder="placeholder").form-input
-     .input-group
-       .primary-gradient-bg.input-icon
-        i.fa.fa-check
-       input(type="text", placeholder="placeholder").form-input
-     .input-group
-       .secondary-gradient-bg.input-icon
-        i.fa.fa-cog
-       input(type="text", placeholder="placeholder").form-input
-     .input-group
-       .default-gradient-bg.input-icon
-        i.fa.fa-at
-       input(type="text", placeholder="placeholder").form-input
+ body
+  article
+  .vh-100.dt.w-100.tc.bg-dark-gray.white.cover(style='background:url(http://mrmrs.github.io/photos/u/009.jpg) no-repeat center;')
+    .dtc.v-mid
+      header.white-70
+        h2.f6.fw1.ttu.tracked.mb2.lh-title Issue Six
+        h3.f6.fw1.lh-title Summer MMXVI
+      h1.f1.f-headline-l.fw1.i.white-60 The Chronicles
+      blockquote.ph0.mh0.measure.f4.lh-copy.center
+        p.fw1.white-70
+          | It's the space you put between the notes that make the music.
+        cite.f6.ttu.tracked.fs-normal Massimo Vignelli
+  .center.f5.pv5.lh-copy.ph4.bg-white.w-80.mb5
+    h1.f1.lh-title.secondary-color The repercussion of ugliness is endless
+    p
+      | The choice of paper size is one of the  first of any given work to be printed. There are two basic paper size systems in the world: the international A sizes, and the American sizes.
+    p
+      | The international Standard paper sizes, called the A series, is based
+      | on a golden rectangle, the divine proportion. It is extremely handsome
+      | and practical as well. It is adopted by many countries around the world
+      | and is based on the German DIN metric Standards. The United States uses
+      | a basic letter size (8 1/2 x 11”) of ugly proportions, and results in
+      | complete chaos with an endless amount of paper sizes. It is a
+      | by-product of the culture of free enterprise, competition and waste.
+      | Just another example of the misinterpretations of freedom.
+    p
+      | These are the basic DIN sizes in mm. for : A0, 841x1189 - A1, 594x841 -
+      | A2, 420x594 - A3, 297x420 - A4, 210x297 - A5, 148x210 - A6, 105 x148 -
+      | A7, 74x 105 - A8, 52x74 - A9, 37x52 - A10, 26x37.
+    p
+      | The A4 is the basic size for stationary. Two thirds of it is a square,
+      | a nice economical happenstance resulting from the golden rectangle.
+      | It is one of the reasons we tend to use as much
+      | as possible the DIN sizes: proportions are always leading to other nice proportions.
+    p
+      | This does not happen with the American basic size which leads to nothing. I counted 28 different standard sizes in USA!. The only reason we use it is because everybody in USA uses it, all stationary in USA is that size, so are manilla folders,  les and of ce equipment!
+      | The repercussion of ugliness is endless.
+    .mw9.center.ph3-ns
+      h2 Avatars
+     .cf.ph2-ns
+       .fl.w-100.w-25-ns.pa2
+         .pa4.tc
+           img.br-100.ba.h3.w3.dib(src='http://tachyons.io/img/logo.jpg', alt='avatar')
+       .fl.w-third.w-25-ns.pa2
+           .pa4.tc
+            img.br-100.h3.w3.dib(src='http://tachyons.io/img/logo.jpg', alt='avatar')
+       .fl.w-third.w-25-ns.pa2
+           .tc.pa4
+             img.br-100.pa1.ba.b--black-10.h3.w3(src='http://tachyons.io/img/logo.jpg', alt='avatar')
+       .fl.w-third.w-25-ns.pa2
+           .pa4.tc
+             img.br4.h3.w3.dib(src='http://tachyons.io/img/logo.jpg', alt='avatar')
+      h2 Banners
+         article.mw7.center.ph3.ph5-ns.tc.br2.pv5.default-bg.secondary-color.mb5
+          h1.fw6.f3.f2-ns.lh-title.mt0.mb3
+            | This is a tagline. For x.
+          h2.fw2.f4.lh-copy.mt0.mb3
+            | This will change things. And we want you to be involved. This text needs to
+            | be longer for testing sake.
+          p.fw1.f5.mt0.mb3
+            | Sign up for beta access or learn more about x.
+          div
+            a.f6.br-pill.secondary-bg.no-underline.washed-green.ba.grow.pv2.ph3.dib.mr3(href='#')
+              | Sign Up
+            a.f6.br-pill.secondary-color.no-underline.ba.grow.pv2.ph3.dib(href='#')
+              | Learn More
+         article.mw7.center.ph3.ph5-ns.tc.br2.pv5.primary-bg.white-color.mb5
+          h1.fw6.f3.f2-ns.lh-title.mt0.mb3
+            | This is a tagline. For x.
+          h2.fw2.f4.lh-copy.mt0.mb3
+            | This will change things. And we want you to be involved. This text needs to
+            | be longer for testing sake.
+          p.fw1.f5.mt0.mb3
+            | Sign up for beta access or learn more about x.
+          div
+            a.f6.br-pill.secondary-bg.no-underline.grow.pv2.ph3.dib.mr3(href='#')
+              | Sign Up
+            a.f6.br-pill.default-bg.no-underline.grow.pv2.ph3.dib(href='#')
+              | Learn More 
+         article.mw7.center.ph3.ph5-ns.tc.br2.pv5.primary-gradient-bg.white-color.mb5
+          h1.fw6.f3.f2-ns.lh-title.mt0.mb3
+            | This is a tagline. For x.
+          h2.fw2.f4.lh-copy.mt0.mb3
+            | This will change things. And we want you to be involved. This text needs to
+            | be longer for testing sake.
+          p.fw1.f5.mt0.mb3
+            | Sign up for beta access or learn more about x.
+          div
+            a.f6.br-pill.secondary-bg.no-underline.grow.pv2.ph3.dib.mr3(href='#')
+              | Sign Up
+            a.f6.br-pill.primary-bg.no-underline.grow.pv2.ph3.dib.mr3(href='#')
+              | Learn More 2
+        section.ph3.ph5-ns.pv5
+          article.mw8.center.br2.default-bg
+            .dt-ns.dt--fixed-ns.w-100
+              .pa3.pa4-ns.dtc-ns.v-mid
+                div
+                  h2.fw4.mt0.mb3.primary-color This is a promo title 
+                  p.black-70.measure.lh-copy.mv0
+                    | This is suporting copy for the wonderful promo catchphrase that is going to be used.
+              .pa3.pa4-ns.dtc-ns.v-mid
+                a.no-underline.f6.tc.db.w-100.pv3.dim.primary-bg.br2(href='#') Sign up for free
+        section.ph3.ph5-ns.pv5
+          article.mw8.center.br2.default-bg.secondary-bordred
+            .dt-ns.dt--fixed-ns.w-100
+              .pa3.pa4-ns.dtc-ns.v-mid
+                div
+                  h2.fw4.mt0.mb3.secondary-color This is a promo title 
+                  p.black-70.measure.lh-copy.mv0
+                    | This is suporting copy for the wonderful promo catchphrase that is going to be used.
+              .pa3.pa4-ns.dtc-ns.v-mid
+                a.no-underline.f6.tc.db.w-100.pv3.dim.secondary-bg.br2(href='#') Sign up for free
+        .flex.items-center.justify-center.pa4.ma2.primary-bg
+          svg.w1(data-icon='info', viewbox='0 0 32 32', style='fill:currentcolor')
+            title info icon
+            path(d='M16 0 A16 16 0 0 1 16 32 A16 16 0 0 1 16 0 M19 15 L13 15 L13 26 L19 26 z M16 6 A3 3 0 0 0 16 12 A3 3 0 0 0 16 6'        )
+          span.lh-title.ml3 Some info that you want to call attention to.
+        .flex.items-center.justify-center.pa4.ma2.secondary-bg
+          svg.w1(data-icon='info', viewbox='0 0 32 32', style='fill:currentcolor')
+            title info icon
+            path(d='M16 0 A16 16 0 0 1 16 32 A16 16 0 0 1 16 0 M19 15 L13 15 L13 26 L19 26 z M16 6 A3 3 0 0 0 16 12 A3 3 0 0 0 16 6'        )
+          span.lh-title.ml3 Some info that you want to call attention to.
+        .flex.items-center.justify-center.pa4.ma2.default-bg
+          svg.w1(data-icon='info', viewbox='0 0 32 32', style='fill:currentcolor')
+            title info icon
+            path(d='M16 0 A16 16 0 0 1 16 32 A16 16 0 0 1 16 0 M19 15 L13 15 L13 26 L19 26 z M16 6 A3 3 0 0 0 16 12 A3 3 0 0 0 16 6'        )
+          span.lh-title.ml3 Some info that you want to call attention to.
+        .flex.items-center.justify-center.pa4.ma2.primary-gradient-bg 
+          svg.w1(data-icon='info', viewbox='0 0 32 32', style='fill:currentcolor')
+            title info icon
+            path(d='M16 0 A16 16 0 0 1 16 32 A16 16 0 0 1 16 0 M19 15 L13 15 L13 26 L19 26 z M16 6 A3 3 0 0 0 16 12 A3 3 0 0 0 16 6'        )
+          span.lh-title.ml3 Some info that you want to call attention to.
+        .mw9.center.ph3-ns
+          h2 Cards
+          .cf.ph2-ns
+            .fl.w-33-ns.pa2
+                article.br2.ba.dark-gray.b--black-10.mv4.w-100.w-100-m.w-100-l.mw5.center
+                  img.db.w-100.br2.br--top(src='http://placekitten.com/g/600/300', alt='Photo of a kitten looking menacing.')
+                  .pa2.ph3-ns.pb3-ns
+                    .dt.w-100.mt1
+                      .dtc
+                        h1.f5.f4-ns.mv0 Cat
+                      .dtc.tr
+                        h2.f5.mv0 $1,000
+                    p.f6.lh-copy.measure.mt2.mid-gray
+                      | If it fits, i sits burrow under covers. Destroy couch leave hair everywhere,
+                      | and touch water with paw then recoil in horror.
+            .fl.w-33-ns.pa2
+                article.mw5.center.bg-white.br3.pa3.pa4-ns.mv3.ba.b--black-10
+                  .tc
+                    img.br-100.h4.w4.dib.ba.b--black-05.pa2(src='http://tachyons.io/img/avatar_1.jpg', title='Photo of a kitty staring at you')
+                    h1.f3.mb2 Mimi W.
+                    h2.f5.fw4.gray.mt0 CCO (Chief Cat Officer)
+            .fl.w-33-ns.pa2
+                article.mw5.center.bg-white.br3.pa3.pa4-ns.mv3.ba.b--black-10
+                  .tc
+                    img.br-100.h3.w3.dib(src='http://tachyons.io/img/avatar_1.jpg', title='Photo of a kitty staring at you')
+                    h1.f4 Mimi Whitehouse
+                    hr.mw3.bb.bw1.b--black-10
+                  p.lh-copy.measure.center.f6.black-70
+                    | Quite affectionate and outgoing.
+                    | She loves to get chin scratches and will
+                    | roll around on the floor waiting for you give her more of them.
+          h2 forms
+           form.pa4.black-80
+             .measure
+               label.f6.b.db.mb2(for='name')
+                 | Name 
+                 span.normal.black-60 (optional)
+               input#name.input-reset.pa2.mb2.db.w-100.form-input(type='text', aria-describedby='name-desc')
+               small#name-desc.f7.black-60.db.mb2 Helper text for the form control.
+             .measure
+               label.f6.b.db.mb2(for='name')
+                 | Name 
+                 span.normal.black-60 (optional)
+               input#name.input-reset.pa2.mb2.db.w-100.form-input(type='text', aria-describedby='name-desc')
+               small#name-desc.f7.black-60.db.mb2 Helper text for the form control.
+          h2 headers
+            header.tc.pv4.pv5-ns
+              img.br-100.pa1.ba.b--black-10.h3.w3(src='http://tachyons.io/img/logo.jpg', alt='avatar')
+              h1.f5.f4-ns.fw6.mid-gray Jasper Whitehouse
+              h2.f6.gray.fw2.ttu.tracked Los Angeles
+          hr
 
-   h3 checkboxes
+
+  .wrapper
+   .container.round-borders.gap
+    h1.text-center.roboto My UI library
     hr
-    .tree-columns
-      .col
-        h4 Normal
-        hr
-        label.checkbox.primary  lorem
-         input(type="checkbox", checked="")
-         span.checkmark
-        label.checkbox.secondary lorem
-         input(type="checkbox")
-         span.checkmark
-        label.checkbox.default lorem
-         input(type="checkbox")
-         span.checkmark    
-      .col
-        h4 Semi-rounded
-        hr
-        label.checkbox.primary.semi-rounded lorem
-         input(type="checkbox")
-         span.checkmark
-        label.checkbox.secondary.semi-rounded lorem
-         input(type="checkbox", checked="")
-         span.checkmark
-        label.checkbox.default.semi-rounded lorem
-         input(type="checkbox")
-         span.checkmark
-    
-      .col
-        h4 rounded
-        hr
-        label.checkbox.primary.rounded lorem
-         input(type="checkbox")
-         span.checkmark
-        label.checkbox.secondary.rounded lorem
-         input(type="checkbox")
-         span.checkmark
-        label.checkbox.default.rounded lorem
-         input(type="checkbox", checked="")
-         span.checkmark
-   hr
-   h3 radio buttons
-   label.primary-color Skip for now
-   h3 wizzard
-   label.primary-color Skip for now
-   h2 alerts/modals
-   .modal.primary.round-borders
-    .header
-      h2 Hello !
-      p this a welcome  modal
-    .content  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit atque at vero, reiciendis labore molestias vitae non, quasi porro, in odit officia quae iste ut neque nisi velit maxime totam.
-    .footer
-      button.box.primary-bg.round-borders.pull-right Cool ! 
-      .clearfix
-   .modal.secondary.round-borders
-    .header
-      h2 Hello !
-      p this a welcome  modal
-    .content  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit atque at vero, reiciendis labore molestias vitae non, quasi porro, in odit officia quae iste ut neque nisi velit maxime totam.
-    .footer
-      button.box.secondary-bg.round-borders.pull-right Cool ! 
-      .clearfix
-   .modal.primary-gradient.round-borders
-    .header
-      h2 Hello !
-      p this a welcome  modal
-    .content  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit atque at vero, reiciendis labore molestias vitae non, quasi porro, in odit officia quae iste ut neque nisi velit maxime totam.
-    .footer
-      button.box.primary-gradient-bg.round-borders.pull-right Cool ! 
-      .clearfix
-   .modal.default-gradient.round-borders
-    .header
-      h2 Hello !
-      p this a welcome  modal
-    .content  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit atque at vero, reiciendis labore molestias vitae non, quasi porro, in odit officia quae iste ut neque nisi velit maxime totam.
-    .footer
-      button.box.default-gradient-bg.round-borders.pull-right Cool ! 
-      .clearfix
-   hr
-   h2 pills
-   .tree-columns
-     .pill.primary-bg lorem
-     .pill.secondary-bg lorem
-     .pill.default-bg lorem
-   hr
-   h2 cards
-   hr
-   label.warning-color TODO
-   h2 progress-bars
-   hr
-   label.warning-color TODO
-   h2 loaders
-   hr
-   label.warning-color TODO
-   h2 heros
-   hr
-   label.warning-color TODO
-   h2 navs
-   hr
-   label.warning-color TODO
-   h2 tabs
-   hr
-   label.warning-color TODO
-   h2 footers
-   hr
-   label.warning-color TODO
-   h2 headers
-   hr
-   label.warning-color TODO
-   h2 menus
-   hr
-   label.warning-color TODO
-   h2 tooltips
-   hr
-   label.warning-color TODO
-   h2 sidebars
-   hr
-   label.warning-color TODO
-   h2 icons
-   hr
-   label.warning-color TODO
-   h2 Typography
-   hr
-   label.warning-color TODO
-   h2 notifications
-   hr
-   label.warning-color TODO
+    h2 Color palette : 
+    hr
+    .palette
+      .box.primary-bottom-bordred.palette-item.primary-bg.round-borders #2454C1
+      .box.secondary-bottom-bordred.palette-item.secondary-bg.round-borders #649E9B
+      .box.primary-bo.while-colorttom-bordred.palette-item.default-bg.round-borders #F1F1E6
+      .box.primary-bottom-bordred.palette-item.primary-gradient-bg.round-borders gradient
+      .box.secondary-bottom-bordred.palette-item.secondary-gradient-bg.round-borders gradient
+      .box.default-bottom-bordred.palette-item.default-gradient-bg.round-borders gradient
+      .box.default-bordred.default-bottom-bordred.round-borders 
+       .center-block test 
+    hr
+    section.mw7.center.avenir
+     h2.roboto.fw1.ph3.ph0-l Articles
+     article.bb.b--black-10
+       a.db.pv4.ph3.ph0-l.no-underline.black.dim(href='#0')
+         .flex.flex-column.flex-row-ns
+           .pr3-ns.mb4.mb0-ns.w-100.w-40-ns
+             img.db(src='http://mrmrs.github.io/photos/warehouse.jpg', alt='Photo of a warehouse with stacked shelves.')
+           .w-100.w-60-ns.pl3-ns
+             h1.f3.fw1.roboto.mt0.lh-title.secondary-color Warehouse Prices Are Fast on the Rise
+             p.f6.f5-l.lh-copy
+               | A warehouse is a commercial building for storage of goods.
+               | Warehouses are used by manufacturers, importers, exporters,
+               | wholesalers, transport businesses, customs, etc. They are
+               | usually large plain buildings in industrial areas of cities,
+               | towns and villages.
+             p.f6.lh-copy.mv0 By Robin Darnell
+     article.bb.b--black-10
+       a.db.pv4.ph3.ph0-l.no-underline.black.dim(href='#0')
+         .flex.flex-column.flex-row-ns
+           .pr3-ns.mb4.mb0-ns.w-100.w-40-ns
+             img.db(src='http://mrmrs.github.io/photos/whale.jpg', alt='Photo of a warehouse with stacked shelves.')
+           .w-100.w-60-ns.pl3-ns
+             h1.f3.fw1.roboto.mt0.lh-title.secondary-color Giant Whale Invests Huge Money to Build a Computer Out of Plankton
+             p.f6.f5-l.lh-copy
+               | Whale is the common name for a widely distributed and diverse
+               | group of fully aquatic placental marine mammals. They are an
+               | informal grouping within the infraorder Cetacea, usually
+               | excluding dolphins and porpoises.
+             p.f6.lh-copy.mv0 By Robin Darnell
+

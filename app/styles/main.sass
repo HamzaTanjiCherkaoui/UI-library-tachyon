@@ -1,18 +1,18 @@
 
-$primary-bg: #2454C1
-$secondary-bg: #649E9B
+$primary-bg: #051937 
+$secondary-bg: #A865FF
 $default-bg: #D7E5E4
+$dim-bg: #f1f4f5
 
-$primary-gradient-bg: linear-gradient(to right top, #2454c1, #0070c5, #0084b8, #0a93a6, #649e9b)
-$secondary-gradient-bg: linear-gradient(to right top, #649e9b, #81afad, #9ec1bf, #bad3d1, #d7e5e4)
-$default-gradient-bg: linear-gradient(to right top, #d7e5e4, #e1ebee, #ecf1f5, #f7f8fa, #ffffff)
+$primary-gradient-bg: linear-gradient(to right, #051937, #182f69, #3d449c, #6e56cf, #a865ff);
+$secondary-gradient-bg: linear-gradient(90deg , $secondary-bg , $default-bg )
+$default-gradient-bg: linear-gradient(90deg , $default-bg , $dim-bg )
+ 
 
-
-$primary-color: #2454C1
-$secondary-color: #649E9B
+$primary-color: #051937
+$secondary-color: #A865FF
 $default-color: #D7E5E4
 
-$dim-bg: #f1f4f5
 
 $error-color : #C1243A
 $success-color : #24C179
@@ -23,7 +23,7 @@ $warning-color : #C1B424
   font-family: 'Palanquin Dark', sans-serif
 html
   box-sizing: border-box
-  font-family: 'Work Sans', sans-serif
+  font-family: 'Palanquin Dark', sans-serif
   color : #274057
   font-weight: 100
 
@@ -33,17 +33,23 @@ hr
   border: none
   border-top: 1px solid #edf5f4
   border-top: 1px solid #fafafa
-  padding: 10px
+  width: 100%
 h1 
   font-weight: 800
 h1,h2,h3,h4
   text-transform: capitalize
 body
   background: #f1f4f5
+  font-family: 'Palanquin Dark', sans-serif
+.gap
+  grid-gap: 1em
+.two-columns
+  display: grid
+  grid-template-columns: 1fr 1fr 
 .tree-columns
   display: grid
   grid-template-columns: 1fr 1fr 1fr
-.two-columns
+.demo-columns
   display: grid
   grid-template-columns: 200px 200px
   grid-gap: 1em
@@ -53,12 +59,15 @@ body
 
 *:focus 
   outline: none
-
+.wrapper
+  display: grid
+  justify-content: center
 .container 
-  width : 900px
-  padding : 100px
-  margin : auto
-  background-color: #fff
+  margin: auto;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 900px
+  padding: 100px
 
 .palette
   display: grid
@@ -116,7 +125,8 @@ body
 .default-bg
   background-color: $default-bg
   color: #5D6771
-
+.dim-bg
+  background-color : $dim-bg
 .primary-gradient-bg 
   background-image: $primary-gradient-bg
   color: #fff
@@ -135,7 +145,8 @@ body
 
 .default-color
   color: $default-bg
-
+.white-color
+  color: #ffffff
 .center-block
   position: absolute
   top: 50%
@@ -186,6 +197,18 @@ label
     grid-template-rows: 1fr
     i
      margin: auto
+  .input-empty-icon
+    text-align: center
+    border-bottom-left-radius: 5px
+    border-top-left-radius: 5px
+    font-size: 10px
+    height: 37px
+    display: grid
+    grid-template-rows: 1fr
+    i
+     margin: auto
+     color: #5D6771
+  
   .form-input
     margin-top: 0  
 button 
@@ -361,3 +384,6 @@ button.disable
  padding-right: 10px
  font-size: 12px
  border-radius: 50px
+
+ .white-color 
+  color: #fff
