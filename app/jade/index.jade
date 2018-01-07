@@ -1,7 +1,7 @@
 extends /layouts/_default
 
 block content
- .container.round-borders
+ .container.round-borders.gap
    h1.text-center.roboto My UI library
    hr
    h2 Color palette : 
@@ -34,7 +34,7 @@ block content
    hr
    h2 buttons : 
    hr
-   .two-columns
+   .demo-columns
      div
       h3 normale :
       button.box.primary-bg.round-borders primary button
@@ -116,7 +116,17 @@ block content
        .default-gradient-bg.input-icon
         i.fa.fa-at
        input(type="text", placeholder="placeholder").form-input
-
+   h3 inputs with icons empty
+     .input-group
+       .dim-bg.input-empty-icon
+        i.fa.fa-user
+       input(type="text", placeholder="placeholder").form-input
+     .input-group
+       .dim-bg.input-empty-icon
+        i.fa.fa-search
+       input(type="text", placeholder="placeholder").form-input
+   
+   
    h3 checkboxes
     hr
     .tree-columns
@@ -196,6 +206,16 @@ block content
       button.box.default-gradient-bg.round-borders.pull-right Cool ! 
       .clearfix
    hr
+   h2 simple grid
+   hr
+   .two-columns.gap
+     .secondary-bg.box.text-center column
+     .secondary-bg.box.text-center column
+   .tree-columns.gap
+     .secondary-bg.box.text-center column
+     .secondary-bg.box.text-center column
+     .secondary-bg.box.text-center column
+   
    h2 pills
    .tree-columns
      .pill.primary-bg lorem
